@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Ad Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Facebook Ad Creator</h2>
+
+    <label for="cookieInput">Enter Facebook Cookie</label>
+    <input type="text" id="cookieInput" placeholder="Enter Facebook cookie" />
+
+    <button class="button" onclick="login()">Login</button>
+    <p id="userId"></p>
+
+    <label>Ad Image</label>
+    <input type="file" id="adImage" />
+
+    <label>Primary Text</label>
+    <input type="text" id="primaryText" placeholder="Enter primary text" />
+
+    <label>Card Title</label>
+    <input type="text" id="cardTitle" placeholder="Enter card title" />
+
+    <label>Website URL</label>
+    <input type="url" id="websiteURL" placeholder="https://example.com" />
+
+    <label>Display Link</label>
+    <input type="text" id="displayLink" placeholder="Display link" />
+
+    <label>Display Description</label>
+    <input type="text" id="description" placeholder="Description" />
+
+    <label>Card Button Text</label>
+    <input type="text" id="buttonText" placeholder="e.g., Learn More" />
+
+    <button class="button" onclick="createAd()">Create Ad Link</button>
+
+    <div id="adLink"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
